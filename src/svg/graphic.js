@@ -313,6 +313,8 @@ svgImage.brush = function (el) {
     attr(svgEl, 'x', x);
     attr(svgEl, 'y', y);
 
+    attr(svgEl, 'preserveAspectRatio', 'none');
+
     setTransform(svgEl, el.transform);
 
     if (style.text != null) {
