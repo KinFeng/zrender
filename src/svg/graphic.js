@@ -315,7 +315,7 @@ svgImage.brush = function (el) {
 
     //add custom
     attr(svgEl, 'preserveAspectRatio', 'none');
-    attr(svgEL, "url(#custom-clip-circle)")
+    attr(svgEl, "url(#custom-clip-circle)")
 
     setTransform(svgEl, el.transform);
 
