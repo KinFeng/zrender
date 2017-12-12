@@ -80,6 +80,21 @@ Definable.prototype.getDefs = function (isForceCreating) {
                     return false;
                 };
             }
+
+            // add custom clip-path
+            id = 'custom-clip-circle';
+            var clipPathEl = this.createElement('clipPath');
+            clipPathEl.setAttribute('id', id);
+
+            var circleEl = this.createElement('circle');
+            circleEl.setAttribute('r',"80");
+            circleEl.setAttribute('cx',"80");
+            circleEl.setAttribute('cy',"80");
+
+            clipPathEl.appendChild(circleEl);
+
+            defs.appendChild(clipPathEl);
+
             return defs;
         }
         else {
